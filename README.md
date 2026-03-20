@@ -1,61 +1,68 @@
 # 🚀 Serverless Event Management System
 
 ## 📌 Overview
-A cloud-based serverless backend system to manage events and user registrations.  
+
+A cloud-based serverless backend system to manage events and user registrations.
 Built using AWS services, this project demonstrates REST API development, serverless architecture, and NoSQL database integration.
 
 ---
 
 ## 🏗️ Architecture
+
 Client → API Gateway → AWS Lambda → DynamoDB
 
 ---
 
 ## 🚀 Features
-- Create events via API
-- Register users for events
-- Store data in DynamoDB
-- Fully serverless (no servers required)
-- Scalable and cost-efficient design
+
+* Create events via API
+* Register users for events
+* Store data in DynamoDB
+* Fully serverless (no servers required)
+* Scalable and cost-efficient design
 
 ---
 
 ## 🛠️ Tech Stack
-- AWS Lambda (Backend logic)
-- API Gateway (REST API)
-- DynamoDB (NoSQL database)
-- Python (Runtime)
+
+* AWS Lambda (Backend logic)
+* API Gateway (REST API)
+* DynamoDB (NoSQL database)
+* Python (Runtime)
 
 ---
 
 ## 📡 API Endpoints
-### Base URL
-https://your-api-url.execute-api.ap-south-1.amazonaws.com/default/helloEvent
 
 ### 🔹 Create Event
+
 **POST**
 
-Request:
+#### Request
 
 ```json
 {
   "action": "create_event",
   "title": "Tech Talk"
 }
+```
 
-Response:
+#### Response
 
 ```json
 {
   "message": "Event created",
   "event_id": "uuid"
 }
+```
 
-🔹 Register User
+---
 
-POST
+### 🔹 Register User
 
-Request:
+**POST**
+
+#### Request
 
 ```json
 {
@@ -63,47 +70,53 @@ Request:
   "event_id": "EVENT_ID",
   "email": "user@gmail.com"
 }
+```
 
-Response:
+#### Response
 
 ```json
 {
   "message": "Registered successfully",
   "registration_id": "uuid"
 }
+```
 
-🔹 Get Events (Optional)
+---
 
-POST
+### 🔹 Get Events (Optional)
 
-Request:
+**POST**
+
+#### Request
 
 ```json
 {
   "action": "get_events"
 }
+```
+
 ---
 
 ## 🧪 Testing
 
-Tested using Postman
-
-Sent POST requests with JSON body
-
-Verified responses and database entries
+* Tested using Postman
+* Sent POST requests with JSON body
+* Verified responses and database entries
 
 ---
 
 ## 🗂️ Project Structure
 
+```
 event-system/
 │
 ├── lambda_function.py
 ├── README.md
+```
 
 ---
 
-## 📷 Screenshots
+## 📸 Screenshots
 
 ![Postman Output](screenshot.png)
 
@@ -111,30 +124,23 @@ event-system/
 
 ## 🧠 Key Learnings
 
-Implemented serverless architecture using AWS
-
-Integrated API Gateway with Lambda functions
-
-Designed NoSQL schema using DynamoDB
-
-Managed IAM roles and permissions
-
-Handled JSON-based API requests
+* Implemented serverless architecture using AWS
+* Integrated API Gateway with Lambda functions
+* Designed NoSQL schema using DynamoDB
+* Managed IAM roles and permissions
+* Handled JSON-based API requests
 
 ---
 
-🔮 Future Improvements
+## 🔮 Future Improvements
 
-Add email notifications (AWS SES)
-
-Generate QR codes for event registration
-
-Build frontend (React / HTML)
-
-Add authentication (AWS Cognito)
+* Add email notifications (AWS SES)
+* Generate QR codes for event registration
+* Build frontend (React / HTML)
+* Add authentication (AWS Cognito)
 
 ---
 
-👨‍💻 Author
+## 👨‍💻 Author
 
 Surya P
