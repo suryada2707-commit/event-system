@@ -82,7 +82,7 @@ Request:
 {
   "action": "get_events"
 }
-
+---
 
 ## 🧪 Testing
 
@@ -92,6 +92,7 @@ Sent POST requests with JSON body
 
 Verified responses and database entries
 
+---
 
 ## 🗂️ Project Structure
 
@@ -100,9 +101,13 @@ event-system/
 ├── lambda_function.py
 ├── README.md
 
+---
+
 ## 📷 Screenshots
 
 ![Postman Output](screenshot.png)
+
+---
 
 ## 🧠 Key Learnings
 
@@ -116,6 +121,7 @@ Managed IAM roles and permissions
 
 Handled JSON-based API requests
 
+---
 
 🔮 Future Improvements
 
@@ -127,7 +133,7 @@ Build frontend (React / HTML)
 
 Add authentication (AWS Cognito)
 
-
+---
 
 👨‍💻 Author
 
